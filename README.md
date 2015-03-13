@@ -1,4 +1,10 @@
-`runtemplate` provides a way of doing template execution from standard Go templates from the command line.
+# runtemplate
+
+This application provides a way of doing template execution from standard Go templates from the command line.
+
+You can install it with:
+
+`go get github.com/flowonyx/runtemplate`
 
 It is intended primarily to be used with `go generate`. Simply put the `go generate` comment in your code like this:
 
@@ -13,7 +19,7 @@ In the template file, you can then access them simply by their keys. For instanc
 
 `.OutFile` and `.TemplateFile` are always available to the templates.
 
-Also included are a couple of filters that may be helpful.
+Also included are some filters that may be helpful.
 
 * title - Converts the input to Title Case.
 * upper - Converts the input to UPPER CASE.
